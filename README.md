@@ -8,3 +8,6 @@
 
 ### Join Table query
 <img width="545" alt="Screenshot 2023-01-23 at 2 32 01 PM" src="https://user-images.githubusercontent.com/93098869/214132489-8d5ed54e-6a8b-48b1-a3a5-28dbd265a66f.png">
+
+### Using GROUP BY 
+<img width="530" alt="Screenshot 2023-01-23 at 2 34 06 PM" src="https://user-images.githubusercontent.com/93098869/214132800-c27a4023-bc93-44cc-855a-9512314c0dab.png">
