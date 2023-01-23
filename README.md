@@ -11,3 +11,4 @@
 
 ### Using GROUP BY 
 <img width="530" alt="Screenshot 2023-01-23 at 2 34 06 PM" src="https://user-images.githubusercontent.com/93098869/214132800-c27a4023-bc93-44cc-855a-9512314c0dab.png">
+<img width="616" alt="Screenshot 2023-01-23 at 2 35 24 PM" src="https://user-images.githubusercontent.com/93098869/214132991-c56d30f7-9f44-4617-9b8d-dfdd6c33ba51.png">
