@@ -33,6 +33,28 @@ SHOW TABLES;
 DESCRIBE items;
 DESCRIBE customers;
 
+-- Inserting data into items
+INSERT INTO items (item_id, name, year, price, quantity)
+VALUES
+(1, "SEGA Master System", 1986, 29.99, 5),
+(2, "Atari Lynx", 1989, 39.99, 10);
+INSERT INTO items 
+VALUES
+(3, "Philips CD-I", 1991, 5.00, 100);
+ALTER TABLE items
+MODIFY COLUMN item_id int AUTO_INCREMENT;
+
+INSERT INTO items (name, year, price, quantity)
+VALUES
+("Nintendo Virtual Boy", 1995, 12.00, 35),
+("Apple Pippin", 1996, 3.00, 50),
+("Atari Jaguar", 1993, 7.50, 200),
+("Nintendo 64", 1996, 25.99, 75),
+("Sega Genesis", 1989, 22.50, 66),
+("Sega Mega Drive II", 1993, 35.00, 123),
+("Sony Playstation", 1995, 44.00, 467),
+("Nintendo Game Boy", 1989, 7.00, 89);
+
 -- Creating another table
 CREATE TABLE orders (
 order_id int AUTO_INCREMENT PRIMARY KEY,
@@ -104,3 +126,35 @@ WHEN 12 THEN 6
 END;
 
 SELECT * FROM items;
+
+-- create table called order_item 
+CREATE TABLE order_item(
+order_id int NOT NULL,
+item_id int NOT NULL,
+CONSTRAINT PK_order_item PRIMARY KEY
+(
+order_id,
+item_id
+),
+FOREIGN KEY (order_id) REFERENCES orders(order_id),
+FOREIGN KEY (item_id) REFERENCES items(item_id)
+);
+
+INSERT INTO order_item(order_id, item_id)
+VALUES
+(1, 3),
+(1, 7),
+(1, 12),
+(1,11),
+(2, 1),
+(2, 4),
+(2, 7),
+(3, 1),
+(4, 10),
+(4, 1),
+(4, 2),
+(5, 11),
+(5, 1),
+(5, 3),
+(6, 1);
+
